@@ -1,32 +1,12 @@
-// Section_5.cpp : This file contains the 'main' function. Program execution begins and ends there.
+// Section_6.cpp : This file contains the 'main' function. Program execution begins and ends there.
 //
 
 #include "pch.h"
 #include <iostream>
 
-using std::cout;
-using std::cin;
-
 int main()
 {
-    /*std::cout << "Hello World!\n"; 
-	std::cout << "Hi Frank!\n";
-
-	int x{ 3 };
-
-	cout << "Sally has " << x << " dogs.";*/
-
-	int m{};
-	int d{};
-	int y{};
-
-	int public;
-
-	cin >> m;
-	cin >> d;
-	cin >> y;
-
-	cout << m << " " << d << " " << y;
+    std::cout << "Hello World!\n"; 
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
