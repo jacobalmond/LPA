@@ -4,9 +4,27 @@
 #include "pch.h"
 #include <iostream>
 
+using std::cout;
+using std::cin;
+
 int main()
 {
-    std::cout << "Hello World!\n"; 
+    /*std::cout << "Hello World!\n"; 
+	std::cout << "Hi Frank!\n";
+
+	int x{ 3 };
+
+	cout << "Sally has " << x << " dogs.";*/
+
+	int m{};
+	int d{};
+	int y{};
+
+	cin >> m;
+	cin >> d;
+	cin >> y;
+
+	cout << m << " " << d << " " << y;
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
