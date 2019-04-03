@@ -20,8 +20,6 @@ int main()
 	int d{};
 	int y{};
 
-	int public;
-
 	cin >> m;
 	cin >> d;
 	cin >> y;
