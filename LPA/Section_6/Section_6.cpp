@@ -104,11 +104,15 @@ int main()
 	float cost_before_tax = (price_per_small_room * number_of_small_rooms) + (price_per_large_room * number_of_large_rooms);
 	cout << "Cost: $" << cost_before_tax << endl;
 
-	float tax_due = ((price_per_small_room * number_of_small_rooms) * sales_tax) + ((price_per_large_room * number_of_large_rooms) * sales_tax);
+	
+	float tax_due = cost_before_tax * sales_tax;
 	cout << "Tax:  $" << tax_due << endl;
 	cout << "==============================================" << endl;
+	cout << endl;
 	cout << "Total estimate: $" << cost_before_tax + tax_due << endl;
 	cout << "This estimate is valid for " << estimate_expiry << " days." << endl;
+	cout << endl;
+	cout << "==============================================" << endl;
 
 }	
 
