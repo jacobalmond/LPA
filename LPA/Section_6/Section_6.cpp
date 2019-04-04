@@ -48,7 +48,7 @@ int main()
 	// Display total estimate: (number of rooms * price per room) + (number of rooms * price per room * tax rate)
 	// Display estimate expiration time
 
-	cout << "Hello, welcome to Jake's Carpet Cleaning Service" << endl;
+	/*cout << "Hello, welcome to Jake's Carpet Cleaning Service" << endl;
 	cout << endl;
 	cout << "\nHow many rooms would you like cleaned? ";
 
@@ -66,18 +66,51 @@ int main()
 	cout << "Tax:  $" << price_per_room * number_of_rooms * sales_tax << endl;
 	cout << "==============================================" << endl;
 	cout << "Total estimate: $" << (price_per_room * number_of_rooms) + (price_per_room * number_of_rooms * sales_tax) << endl;
+	cout << "This estimate is valid for " << estimate_expiry << " days." << endl;*/
+
+	// Prompt the user to enter the number of small and large rooms they would like cleaned
+	// Display number of small rooms
+	// Display number of large rooms
+	// Display price per small room
+	// Display price per large room
+
+	// Display cost: (number of small rooms * price per small room) + (number of large rooms * price per large room)
+	// Display tax: combined costs * tax rate
+	// Display total estimate: (combined cost) + (tax)
+	// Display estimate expiration time
+
+	cout << "Hello, welcome to Jake's Carpet Cleaning Service" << endl;
+	cout << endl;
+
+	cout << "\nHow many small rooms would you like cleaned? ";
+	int number_of_small_rooms{ 0 };
+	cin >> number_of_small_rooms;
+
+	cout << "\nHow many large rooms would you like cleaned? ";
+	int number_of_large_rooms{ 0 };
+	cin >> number_of_large_rooms;
+
+	const double price_per_small_room{ 25.0 };
+	const double price_per_large_room{ 30.0 };
+	const double sales_tax{ 0.06 };
+	const int estimate_expiry{ 30 };
+
+	cout << "\nEstimate for carpet cleaning service" << endl;
+	cout << "Number of small rooms: " << number_of_small_rooms << endl;
+	cout << "Number of large rooms: " << number_of_large_rooms << endl;
+	cout << "Price per small room: $" << price_per_small_room << endl;
+	cout << "Price per large room: $" << price_per_large_room << endl;
+
+	float cost_before_tax = (price_per_small_room * number_of_small_rooms) + (price_per_large_room * number_of_large_rooms);
+	cout << "Cost: $" << cost_before_tax << endl;
+
+	float tax_due = ((price_per_small_room * number_of_small_rooms) * sales_tax) + ((price_per_large_room * number_of_large_rooms) * sales_tax);
+	cout << "Tax:  $" << tax_due << endl;
+	cout << "==============================================" << endl;
+	cout << "Total estimate: $" << cost_before_tax + tax_due << endl;
 	cout << "This estimate is valid for " << estimate_expiry << " days." << endl;
 
-}
+}	
 
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
 
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
 
