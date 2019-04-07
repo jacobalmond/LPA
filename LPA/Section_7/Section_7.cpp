@@ -4,9 +4,30 @@
 #include "pch.h"
 #include <iostream>
 
+using std::cout;
+using std::endl;
+
 int main()
 {
-    std::cout << "Hello World!\n"; 
+	/*int test_scores[5]{ 100, 99, 98, 97, 96 };
+
+	cout << "Score at array index 0 = " << test_scores[0] << endl;
+	cout << "Score at array index 1 = " << test_scores[1] << endl;
+	cout << "Score at array index 2 = " << test_scores[2] << endl;
+	cout << "Score at array index 3 = " << test_scores[3] << endl;
+	cout << "Score at array index 4 = " << test_scores[4] << endl;*/
+
+	/*char vowels[]{ 'a', 'e', 'i', 'o', 'u' };
+	cout << "The first vowel is " << vowels[0] << endl;
+	cout << "The last vowel is " << vowels[4] << endl;*/
+
+	double hi_temps[]{ 90.1, 89.7, 91.2, 88.4 };
+
+	cout << "The first high temperature is " << hi_temps[0]  << endl;
+
+	hi_temps[0] = 92.0;
+
+	cout << "The first high temperature is now " << hi_temps[0] << endl;
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
