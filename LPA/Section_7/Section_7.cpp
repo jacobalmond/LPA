@@ -3,9 +3,15 @@
 
 #include "pch.h"
 #include <iostream>
+#include <vector>
+
+//using namespace std;
 
 using std::cout;
 using std::endl;
+using std::string;
+using std::vector;
+
 
 int main()
 {
@@ -15,11 +21,11 @@ int main()
 	cout << "Score at array index 1 = " << test_scores[1] << endl;
 	cout << "Score at array index 2 = " << test_scores[2] << endl;
 	cout << "Score at array index 3 = " << test_scores[3] << endl;
-	cout << "Score at array index 4 = " << test_scores[4] << endl;*/
+	cout << "Score at array index 4 = " << test_scores[4] << endl;
 
-	/*char vowels[]{ 'a', 'e', 'i', 'o', 'u' };
+	char vowels[]{ 'a', 'e', 'i', 'o', 'u' };
 	cout << "The first vowel is " << vowels[0] << endl;
-	cout << "The last vowel is " << vowels[4] << endl;*/
+	cout << "The last vowel is " << vowels[4] << endl;
 
 	double hi_temps[]{ 90.1, 89.7, 91.2, 88.4 };
 
@@ -28,6 +34,21 @@ int main()
 	hi_temps[0] = 92.0;
 
 	cout << "The first high temperature is now " << hi_temps[0] << endl;
+
+	const int rows{ 3 };
+	const int cols{ 4 };
+
+	int movie_rating[rows][cols]
+	{
+		{0, 4, 3, 5},
+		{2, 3, 3, 5},
+		{1, 4, 4, 5}
+	};
+
+	cout << movie_rating[0][3];*/
+
+	vector <int> test_scores{};	
+
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
